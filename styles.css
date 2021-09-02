@@ -1,0 +1,80 @@
+.navbar-custom{background-color: 26413C;}
+.nav-link{color:whitesmoke;}
+a .nav-link .active{ background-color: A4BEF3 ; }
+img{max-width:100% ,height auto}
+.list-group{    max-height: 300px;
+                margin-bottom: 10px;
+                overflow:scroll;
+                -webkit-overflow-scrolling: touch;}
+.list-group-item{ display:list-item,
+                 decimal inside}
+
+body{background-color:A0A083 !important;}
+.card{background-color:26413C; color: whitesmoke ;margin:5px 0;border: .75em double black;box-shadow: 1em 1em gray;}
+
+div.col-4 img{
+width:220px;
+height:140px
+}
+div.col-4 ul li{
+color: white;
+
+}
+.greenDayTitle{
+text-align: center;
+color: rgb(172, 6, 6);
+}
+row.collage div img{
+height: 150px;
+width: 150px;
+size: cover;
+}
+.row.d-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+ .first-section, .second-section, .third-section, .fourth-section{
+     display: flex;
+     flex-direction: row;
+justify-content: center;
+object-fit: fill;
+} 
+.first-section{
+    background-color: aqua;
+}
+.second-section{
+    background-color: rgb(0, 255, 157);
+}
+.third-section{
+    background-color: rgb(0, 255, 34);
+}
+.fourth-section{
+    background-color: rgb(102, 255, 0);
+}
+
+
+#jumbotron-info {
+ 
+    position: relative;
+    background-color: #d9dfe5;
+    -webkit-animation: bummer 2s;
+    animation: jumbotronAppear 2s;
+    -webkit-transform: scale(0,0); 
+    transform: scale(0,0);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+@-webkit-keyframes jumbotronAppear {
+    100% {
+        -webkit-transform: scale(1,1); 
+    }
+}
+
+@keyframes jumbotronAppear {
+    100% {
+        transform: scale(1,1); 
+    }
+}
