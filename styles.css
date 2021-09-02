@@ -78,3 +78,16 @@ object-fit: fill;
         transform: scale(1,1); 
     }
 }
+.card-body{
+    padding: 0;
+}
+.card{
+    padding-top: 20px;
+    position: relative;
+}
+
+#music-genre{
+    position: absolute;
+    align-self: flex-start;
+    max-width: 7rem;
+}
