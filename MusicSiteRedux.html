@@ -295,7 +295,7 @@
 
               </tr>
             </thead>
-            <tbody>
+            <tbody >
               <tr>
                 <th scope="row">1</th>
                 <td>Opening</td>
@@ -376,7 +376,11 @@
                 <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
             </tbody>
-          </table>
+           
+          </table> 
+          <div class="d-flex" id="add-button">
+              <button type="button" class="btn btn-success btn-shadow">Add Track</button>
+            </div>
     </div>
     
     <footer class=" text-center text-white" style="background-color: 26413C;">
@@ -425,8 +429,7 @@
             </div>
             <!-- Copyright -->
           </footer>
-          
-        <script src="functions.js" type="type/javascript"></script>
+
         <script>
           let buttonLocation = document.querySelectorAll("button.btn.btn-danger")
 
@@ -436,7 +439,7 @@
                 document.querySelectorAll("tr:last-of-type")[1].remove()
                 })
             }
-
+          
         </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>

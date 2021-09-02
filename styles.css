@@ -100,3 +100,20 @@ object-fit: fill;
 .table-striped>tbody>tr:nth-child(even)>th {
    background-color: rgb(3, 190, 103);
  }
+
+.table{
+    position: relative;
+}
+
+#add-button{
+    margin-top: -20px;
+}
+
+.btn-shadow {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-shadow:hover {
+    transform: translateY(-6px);
+    box-shadow: 15px 10px 20px #1f1e1e;
+  }
