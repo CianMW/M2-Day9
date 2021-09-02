@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   
 
     <!---Navbar Start-->
         <ul class="nav nav-pills nav-fill navbar-custom">
@@ -34,12 +34,13 @@
     <!---Animated Jumbotron-->
     <div class="container jumbotron-container">
           <div class="jumbotron  mt-5" id="jumbotron-info">
-            <div class="container ">
+            <div class="container-fluid ">
                 <div class="row d-flex" width="50px" height=50px>
-                    <div class="col-3 first-section"><p>Favourite section</p></div>
-                    <div class="col-3 second-section"><p>Review Section</p></div>
-                    <div class="col-3 third-section"><p>Most Hated</p></div>
-                    <div class="col-3 fourth-section"><p>Album Collage</p></div>
+                    <div class="col-12 first-section"><h1>Site Layout</h1></div>
+                    <div class="col-12 first-section"><p>Favourite section</p></div>
+                    <div class="col-12 second-section"><p>Review Section</p></div>
+                    <div class="col-12 third-section"><p>Most Hated</p></div>
+                    <div class="col-12 fourth-section"><p>Album Collage</p></div>
              
                 </div>
             </div>
@@ -299,66 +300,80 @@
                 <th scope="row">1</th>
                 <td>Opening</td>
                 <td>1:07</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Pts.OF.Athrty" (featuring Jay Gordon)</td>
                 <td>3:45</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Enth E Nd" (featuring KutMasta Kurt and Motion Man)</td>
                 <td>4:00</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>[chali]</td>
                 <td>0:23</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Frgt/10" (featuring Alchemist and Chali 2na)</td>
                 <td>3:32</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>P5hng Me A*wy" (featuring Stephen Richards)</td>
                 <td>4:38</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Plc.4 Mie Hæd" (featuring Amp Live and Zion)</td>
                 <td>4:20</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>X-Ecutioner Style" (featuring Sean C, Roc Raida and Black Thought)</td>
                 <td>1:49</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>H! Vltg3" (featuring Evidence, Pharoahe Monch and DJ Babu)</td>
                 <td>3:30</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>[Riff Raff]</td>
                 <td>0:21</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Ntr\Mssion</td>
                 <td>4:12</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Ppr:Kut" (featuring Cheapshot, Jubacca, Rasco and Planet Asia)</td>
                 <td>0:29</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Rnw@y" (featuring Backyard Bangers and Phoenix Orion)</td>
                 <td>3:26</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
               </tr>
             </tbody>
           </table>
@@ -410,8 +425,21 @@
             </div>
             <!-- Copyright -->
           </footer>
+          
+        <script src="functions.js" type="type/javascript"></script>
+        <script>
+          let buttonLocation = document.querySelectorAll("button.btn.btn-danger")
 
+            for (let i = 0; i < buttonLocation.length; i++) {
+                const element = buttonLocation[i];
+                element.addEventListener("click", e=>{
+                document.querySelectorAll("tr:last-of-type")[1].remove()
+                })
+            }
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
-</body>
+    </body>
 
 </html>
