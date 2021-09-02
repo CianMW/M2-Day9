@@ -107,6 +107,7 @@ object-fit: fill;
 
 #add-button{
     margin-top: -20px;
+    z-index: 100;
 }
 
 .btn-shadow {
